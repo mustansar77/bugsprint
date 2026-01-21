@@ -59,7 +59,7 @@ export default function Wallet() {
       </div>
 
       {/* Deposit History */}
-      <div className="bg-white rounded-xl shadow md:p-6">
+      <div className="bg-white rounded-xl shadow p-2 md:p-6">
         <h2 className="text-lg font-semibold text-gray-800 mb-4">
           Deposit History
         </h2>
