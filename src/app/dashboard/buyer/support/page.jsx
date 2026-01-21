@@ -37,13 +37,14 @@ export default function Support() {
   };
 
   return (
-    <div className="max-w-4xl min-h-screen">
-      <h1 className="text-2xl font-bold text-[#4F46E5] mb-6">
+    <div className="flex flex-col min-h-screen max-w-7xl mx-auto">
+      {/* Page Title */}
+      <h1 className="text-2xl font-bold text-[#4F46E5] mb-4">
         Support Chat
       </h1>
 
-      {/* Chat Box */}
-      <div className="bg-white rounded-xl shadow flex flex-col h-[500px]">
+      {/* Chat Container */}
+      <div className="flex-1 bg-white rounded-xl shadow flex flex-col overflow-hidden">
         {/* Header */}
         <div className="border-b p-4 font-semibold text-gray-800">
           BugSprint Support
@@ -73,9 +74,11 @@ export default function Support() {
             </div>
           ))}
         </div>
+      </div>
 
-        {/* Input */}
-        <div className="border-t p-4 flex gap-3">
+      {/* Sticky Input Bar */}
+      <div className="sticky bottom-0 bg-[#F4F7FA] pt-4">
+        <div className="bg-white border rounded-xl shadow p-4 flex gap-3">
           <input
             type="text"
             value={message}
