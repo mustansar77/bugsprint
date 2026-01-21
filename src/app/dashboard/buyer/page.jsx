@@ -20,7 +20,7 @@ const chartData = [
 
 export default function BuyerDashboard() {
   return (
-    <div className="w-full space-y-8 px-2 sm:px-0">
+    <div className="w-full space-y-8 px-2 py-4 sm:px-0">
       {/* Title */}
       <h1 className="text-2xl sm:text-3xl font-bold text-[#4F46E5]">
         Buyer Dashboard
