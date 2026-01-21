@@ -45,7 +45,7 @@ export default function Wallet() {
       <h1 className="text-2xl font-bold text-[#4F46E5] mb-6">Wallet</h1>
 
       {/* Wallet Card */}
-      <div className="bg-white px-2 md:p-6 rounded-xl shadow max-w-lg mb-10">
+      <div className="bg-white px-2 py-4 md:p-6 rounded-xl shadow max-w-lg mb-10">
         <p className="text-xl font-semibold text-gray-800">
           ${balance} Available
         </p>
