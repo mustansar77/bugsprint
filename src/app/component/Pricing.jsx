@@ -50,7 +50,7 @@ const Pricing = () => {
                 </span>
               )}
               <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
-              <p className="text-lg mb-4">{plan.description}</p>
+              <p className="text-lg text-[#4B5563]  mb-4">{plan.description}</p>
               <p className={`text-3xl font-extrabold mb-2 ${plan.popular ? 'text-white' : 'text-secondary'}`}>
                 {plan.price}
               </p>
