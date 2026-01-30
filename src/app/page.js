@@ -5,6 +5,7 @@ import Pricing from './component/Pricing'
 import Testimonials from './component/Testimonials'
 import Cta from './component/Cta'
 import WhatWeOffer from './whatweoffer/page'
+import Faq from './component/Faq'
 
 
 const page = () => {
@@ -17,6 +18,7 @@ const page = () => {
     <Testimonials/>
     <Pricing/>
     <Cta/>
+    <Faq/>
     </>
   )
 }
