@@ -48,10 +48,10 @@ const WhatWeOffer = () => {
 
   return (
     <section className="bg-[#F4F7FA]  min-h-screen px-4 sm:px-6 lg:px-8 pt-36 pb-10 max-w-7xl mx-auto">
-      <h2 className="text-4xl md:text-5xl font-bold text-[#4F46E5] mb-6 text-center">
+      <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-6 text-center">
         What We Offer
       </h2>
-      <p className="text-[#4B5563] text-lg md:text-xl mb-12 text-center max-w-3xl mx-auto leading-relaxed">
+      <p className="text-[#4B5563] text-lg md:text-xl mb-12 text-center max-w-6xl mx-auto leading-relaxed">
         BugSprint offers fast, reliable, and hassle-free solutions for small development tasks. 
         No hiring, no bidding, just fixed bugs and completed tasks in 24–72 hours. 
         From frontend tweaks to backend fixes, mobile apps, UI improvements, and maintenance, 
@@ -62,7 +62,7 @@ const WhatWeOffer = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 flex flex-col items-center text-center"
+            className="bg-white cursor-pointer p-8 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 flex flex-col items-center text-center"
           >
             {service.icon}
             <h3 className="text-xl font-semibold text-[#1F2937] mb-2">{service.title}</h3>

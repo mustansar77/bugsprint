@@ -4,6 +4,7 @@ import HowWork from './component/HowWork'
 import Pricing from './component/Pricing'
 import Testimonials from './component/Testimonials'
 import Cta from './component/Cta'
+import WhatWeOffer from './whatweoffer/page'
 
 
 const page = () => {
@@ -11,6 +12,7 @@ const page = () => {
     <>
     
     <HeroSection/>
+    <WhatWeOffer/>
     <HowWork/>
     <Pricing/>
     <Testimonials/>

@@ -30,9 +30,9 @@ const HeroSection = () => {
         {/* Logo */}
        
         {/* Headline */}
-        <h1 className="text-4xl font-heading sm:text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
+        <h1 className="text-4xl font-heading sm:text-5xl md:text-6xl font-extrabold text-primary mb-6 leading-tight">
           AI helps, humans get it right.
-          <span className="block text-[#10B981] mt-2">Bugsprint fixes bugs faster, smarter, and safely.</span>
+          <span className="block text-secondary mt-2">Bugsprint fixes bugs faster, smarter, and safely.</span>
         </h1>
 
         {/* Subheadline */}
