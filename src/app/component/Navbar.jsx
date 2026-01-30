@@ -1,13 +1,14 @@
-"use client"
+"use client";
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import Link from 'next/link';
-
+import Image from 'next/image';
+import logo from "../../../public/logo.png"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
-  // Pages with their paths
+
   const pages = [
     { name: 'About', path: 'about' },
     { name: 'WhatWeOffer', path: 'whatweoffer' },
@@ -15,23 +16,30 @@ const Navbar = () => {
     { name: 'Contact', path: 'contact' },
   ];
 
-  // Function to handle link click
   const handleLinkClick = () => {
     setIsOpen(false); // Close mobile menu
   };
 
- const handleHome = () => {
+  const handleHome = () => {
     router.push('/'); // Navigate to home page
   };
-
 
   return (
     <nav className="bg-[#F4F7FA] shadow-md fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          {/* Logo / Brand */}
-          <div className="flex-shrink-0 text-2xl font-bold cursor-pointer text-[#4F46E5]" onClick={handleHome}>
-            BugSprint
+          {/* Logo */}
+          <div
+            className="flex-shrink-0 cursor-pointer"
+            onClick={handleHome}
+          >
+            <Image
+              src={logo}
+              alt="Bugsprint Logo"
+              width={150} // adjust width as needed
+              height={50} // adjust height as needed
+              priority
+            />
           </div>
 
           {/* Desktop Menu */}
