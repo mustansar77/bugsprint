@@ -1,40 +1,59 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import logo from '../../../public/logo.png';
+import bugwithai from '../../../public/bugwithai.png';
 
 const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="bg-[#F4F7FA] min-h-screen flex items-center relative overflow-hidden py-16 md:py-24"
+      className="relative w-full min-h-screen flex items-center justify-center text-center py-16 md:py-24 overflow-hidden"
     >
-      {/* Decorative shapes */}
-      <div className="absolute top-0 left-0 w-56 h-56 md:w-72 md:h-72 bg-[#4F46E5] rounded-full mix-blend-multiply opacity-20 animate-pulse"></div>
-      <div className="absolute bottom-0 right-0 w-72 h-72 md:w-96 md:h-96 bg-[#10B981] rounded-full mix-blend-multiply opacity-20 animate-pulse"></div>
+      {/* Background illustration */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={bugwithai}
+          alt="Bugsprint AI illustration"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          className="opacity-70"
+          priority
+        />
+        {/* Dark overlay for readability */}
+        <div className="absolute inset-0 bg-black bg-opacity-80"></div>
+      </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="flex flex-col-reverse md:flex-row items-center justify-between">
-          {/* Left Content */}
-          <div className="md:w-1/2 text-center md:text-left mt-12 md:mt-0">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#4F46E5] mb-6 leading-tight">
-              Get Your Bugs & Small Dev Tasks Fixed in 24–72 Hours
-            </h1>
-            <p className="text-[#4B5563] text-base sm:text-lg md:text-xl mb-8">
-              No hiring, no bidding, no delays. Submit your task, pay a fixed price, and get it done fast.
-            </p>
-            <Link href="#submitTask" scroll={false}>
-              <span className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-[#4F46E5] text-white font-medium rounded-lg hover:bg-[#4338CA] cursor-pointer transition text-sm sm:text-base">
-                Submit Your First Task
-              </span>
-            </Link>
-          </div>
+      {/* Content */}
+      <div className="relative w-full z-10 px-4 sm:px-6 lg:px-8">
+        {/* Logo */}
+       
+        {/* Headline */}
+        <h1 className="text-4xl font-heading sm:text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
+          AI helps, humans get it right.
+          <span className="block text-[#10B981] mt-2">Bugsprint fixes bugs faster, smarter, and safely.</span>
+        </h1>
 
-          {/* Right Content: Decorative abstract blocks */}
-          <div className="md:w-1/2 flex justify-center relative w-full">
-            <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-64 md:h-64 bg-gradient-to-tr from-[#4F46E5] to-[#4338CA] rounded-3xl shadow-xl transform rotate-12 animate-pulse"></div>
-            <div className="w-32 h-32 sm:w-48 sm:h-48 md:w-48 md:h-48 bg-gradient-to-tr from-[#10B981] to-[#06B6D4] rounded-2xl shadow-lg transform -rotate-12 absolute top-16 sm:top-20 right-0 animate-pulse"></div>
-            <div className="w-20 h-20 sm:w-32 sm:h-32 md:w-32 md:h-32 bg-gradient-to-tr from-[#FBBF24] to-[#F59E0B] rounded-full shadow-md absolute bottom-8 sm:bottom-10 left-4 sm:left-10 animate-pulse"></div>
-          </div>
-        </div>
+        {/* Subheadline */}
+        <p className="text-gray-200 font-body text-lg sm:text-xl mb-8">
+        Automated AI can’t handle every bug — we combine speed, expertise, and accountability to get it done right.
+        </p>
+
+        {/* CTA buttons */}
+       <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-xl mx-auto">
+  <Link href="#submitTask" scroll={false} className="flex-1">
+    <button className="w-full font-body px-8 py-4 bg-[#4F46E5] text-white font-medium rounded-lg hover:bg-[#4338CA] transition text-lg text-center">
+      Submit Your First Task
+    </button>
+  </Link>
+  <Link href="#learnMore" scroll={false} className="flex-1">
+    <button className="w-full font-body px-8 py-4 border-[1px] border-white text-white font-medium rounded-lg hover:bg-white hover:text-[#4F46E5] transition text-lg text-center">
+      Learn More
+    </button>
+  </Link>
+</div>
+
       </div>
     </section>
   );

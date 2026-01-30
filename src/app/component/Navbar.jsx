@@ -25,9 +25,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#F4F7FA] shadow-md fixed w-full z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+    <nav className="bg-[#F4F7FA] flex justify-center  items-center  shadow-md fixed w-full h-[90] z-50">
+      <div className="max-w-7xl mx-auto px-4 w-full sm:px-6 lg:px-8">
+        <div className="flex justify-between w-full h-16 items-center">
           {/* Logo */}
           <div
             className="flex-shrink-0 cursor-pointer"
@@ -36,8 +36,8 @@ const Navbar = () => {
             <Image
               src={logo}
               alt="Bugsprint Logo"
-              width={150} // adjust width as needed
-              height={50} // adjust height as needed
+              width={130} // adjust width as needed
+              height={10} // adjust height as needed
               priority
             />
           </div>
