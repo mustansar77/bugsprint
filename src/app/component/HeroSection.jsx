@@ -43,12 +43,12 @@ const HeroSection = () => {
         {/* CTA buttons */}
        <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-xl mx-auto">
   <Link href="#submitTask" scroll={false} className="flex-1">
-    <button className="w-full font-body px-8 py-4 bg-[#4F46E5] text-white font-medium rounded-lg hover:bg-[#4338CA] transition text-lg text-center">
+    <button className="w-full font-body px-8 py-4 bg-[#10B981] text-white font-medium rounded-lg hover:bg-[#1e5543] transition text-lg text-center">
       Submit Your First Task
     </button>
   </Link>
   <Link href="#learnMore" scroll={false} className="flex-1">
-    <button className="w-full font-body px-8 py-4 border-[1px] border-white text-white font-medium rounded-lg hover:bg-white hover:text-[#4F46E5] transition text-lg text-center">
+    <button className="w-full font-body px-8 py-4 border-[1px] border-[#1e5543] text-white font-medium rounded-lg hover:bg-[#1e5543]  transition text-lg text-center">
       Learn More
     </button>
   </Link>
