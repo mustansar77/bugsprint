@@ -6,7 +6,7 @@ const Cta = () => {
     <section className="bg-[#4F46E5] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-          Ready to Get Your Task Fixed Fast?
+          Ready to Get Your Task Fixed Fast? hiii
         </h2>
         <p className="text-[#E0E7FF] text-lg md:text-xl mb-10">
           Submit your bug or small dev task now and get it done in 24–72 hours. No hassle, no bidding, just results.
