@@ -14,8 +14,8 @@ const page = () => {
     <HeroSection/>
     <WhatWeOffer/>
     <HowWork/>
-    <Pricing/>
     <Testimonials/>
+    <Pricing/>
     <Cta/>
     </>
   )
