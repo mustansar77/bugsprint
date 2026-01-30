@@ -6,6 +6,7 @@ import Testimonials from './component/Testimonials'
 import Cta from './component/Cta'
 import WhatWeOffer from './whatweoffer/page'
 import Faq from './component/Faq'
+import Demo from './component/Demo'
 
 
 const page = () => {
@@ -15,6 +16,7 @@ const page = () => {
     <HeroSection/>
     <WhatWeOffer/>
     <HowWork/>
+    <Demo/>
     <Testimonials/>
     <Pricing/>
     <Cta/>
