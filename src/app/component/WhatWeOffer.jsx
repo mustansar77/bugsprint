@@ -30,7 +30,7 @@ const WhatWeOffer = () => {
   ];
 
   return (
-    <section id="whatweoffer" className="bg-white py-20">
+    <section id="whatweoffer" className="bg-[#F4F7FA]  py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl font-bold text-secondary mb-4">What We Offer</h2>
         <p className="text-[#4B5563] text-lg mb-12">
@@ -41,7 +41,7 @@ const WhatWeOffer = () => {
           {offers.map((offer, index) => (
             <div
               key={index}
-              className="bg-[#F4F7FA] p-8 rounded-xl shadow-md hover:shadow-xl transition cursor-pointer flex flex-col items-center text-center"
+              className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition cursor-pointer flex flex-col items-center text-center"
             >
               <div className="mb-6">{offer.icon}</div>
               <h3 className="text-2xl font-semibold text-[#1F2937] mb-3">

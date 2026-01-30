@@ -27,7 +27,7 @@ const Pricing = () => {
   ];
 
   return (
-    <section id="pricing" className="bg-white py-20">
+    <section id="pricing" className="  bg-[#F4F7FA] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl font-bold text-secondary mb-4">Pricing Plans</h2>
         <p className="text-gray-600 text-lg mb-12">
@@ -41,7 +41,7 @@ const Pricing = () => {
               className={`p-8 rounded-2xl shadow-lg transition transform hover:scale-105 ${
                 plan.popular
                   ? 'bg-secondary text-white border-2 border-secondary'
-                  : 'bg-[#F4F7FA] text-secondary'
+                  : 'bg-white text-secondary'
               }`}
             >
               {plan.popular && (

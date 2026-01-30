@@ -15,7 +15,7 @@ const Testimonials = () => {
       role: 'Startup Founder',
       quote: 'BugSprint saved our launch — fast, reliable, no headaches.',
       img: 'https://randomuser.me/api/portraits/men/46.jpg',
-      rating: 5,
+      rating: 4,
     },
     {
       name: 'Sarah L.',
@@ -36,7 +36,7 @@ const Testimonials = () => {
       role: 'UI/UX Designer',
       quote: 'Front-end bugs? Fixed in hours! The process is seamless.',
       img: 'https://randomuser.me/api/portraits/women/33.jpg',
-      rating: 5,
+      rating: 4,
     },
     {
       name: 'David H.',
