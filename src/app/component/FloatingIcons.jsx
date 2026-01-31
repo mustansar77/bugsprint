@@ -22,7 +22,7 @@ const FloatingIcons = () => {
           href="https://wa.me/+923115170829"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-14 h-14 flex items-center justify-center rounded-full bg-green-500 shadow-lg text-white cursor-pointer hover:scale-110 transition-transform"
+          className="w-14 h-14 flex items-center justify-center rounded-full bg-green-500 shadow-lg text-white cursor-pointer hover:scale-110 hover:shadow-green-400/60 transition-transform duration-300 animate-pulse-slow"
           title="Chat on WhatsApp"
         >
           <FaWhatsapp size={24} />
@@ -31,7 +31,7 @@ const FloatingIcons = () => {
         {/* Go to Top */}
         <button
           onClick={scrollToTop}
-          className="w-14 h-14 flex items-center justify-center rounded-full bg-blue-500 shadow-lg text-white cursor-pointer hover:scale-110 transition-transform"
+          className="w-14 h-14 flex items-center justify-center rounded-full bg-blue-500 shadow-lg text-white cursor-pointer hover:scale-110 hover:shadow-blue-400/60 transition-transform duration-300 animate-pulse-slow"
           title="Go to Top"
         >
           <FaArrowUp size={24} />
@@ -40,7 +40,7 @@ const FloatingIcons = () => {
         {/* Live Chat */}
         <button
           onClick={toggleChat}
-          className="w-14 h-14 flex items-center justify-center rounded-full bg-purple-500 shadow-lg text-white cursor-pointer hover:scale-110 transition-transform"
+          className="w-14 h-14 flex items-center justify-center rounded-full bg-purple-500 shadow-lg text-white cursor-pointer hover:scale-110 hover:shadow-purple-400/60 transition-transform duration-300 animate-pulse-slow"
           title="Live Chat"
         >
           <FaCommentDots size={24} />
