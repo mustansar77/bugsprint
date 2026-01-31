@@ -47,9 +47,9 @@ const HeroSection = () => {
       Submit Your First Task
     </button>
   </Link>
-  <Link href="#learnMore" scroll={false} className="flex-1">
+  <Link href="register" scroll={false} className="flex-1">
     <button className="w-full font-body px-8 py-4 border-[1px] border-[#1e5543] text-white font-medium rounded-lg hover:bg-[#1e5543]  transition text-lg text-center">
-      Learn More
+      Register Now
     </button>
   </Link>
 </div>
