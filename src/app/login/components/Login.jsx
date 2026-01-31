@@ -6,7 +6,7 @@ import loginIllustration from "../../../../public/pic-2.png"; // Replace with yo
 
 const Login = () => {
   return (
-    <section className="min-h-screen bg-white flex items-center justify-center py-12 px-4">
+    <section className="min-h-screen bg-white flex items-center justify-center py-28 sm:py-12 px-4">
       {/* Card Container */}
       <div className="bg-secondary rounded-3xl shadow-xl w-full max-w-6xl flex flex-col md:flex-row overflow-hidden">
         
