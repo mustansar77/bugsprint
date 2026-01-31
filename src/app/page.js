@@ -7,6 +7,7 @@ import Cta from './component/Cta'
 import WhatWeOffer from './whatweoffer/page'
 import Faq from './component/Faq'
 import Demo from './component/Demo'
+import FloatingIcons from './component/FloatingIcons'
 
 
 const page = () => {
@@ -21,6 +22,7 @@ const page = () => {
     <Pricing/>
     <Cta/>
     <Faq/>
+     <FloatingIcons/>
     </>
   )
 }

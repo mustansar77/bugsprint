@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Optional: Global styles for floating icons */
+.floating-icon {
+  @apply fixed z-50 w-14 h-14 flex items-center justify-center rounded-full shadow-lg text-white cursor-pointer transition-transform hover:scale-110;
+}
